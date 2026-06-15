@@ -14,10 +14,45 @@ const Navbar = () => {
 
       {/* Responsive Icons: Smaller gaps and size on phones, larger on laptops */}
       <div className="flex items-center justify-center gap-3 md:gap-6 text-xl md:text-2xl text-gray-300">
-        <FaLinkedinIn className="cursor-pointer transition-colors hover:text-white" />
-        <FaInstagram className="cursor-pointer transition-colors hover:text-white" />
-        <FaXTwitter className="cursor-pointer transition-colors hover:text-white" />
-        <FaWhatsapp className="cursor-pointer transition-colors hover:text-white" />
+        {/* LinkedIn Link */}
+        <a
+          href="https://www.linkedin.com/in/siam-rahman76/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer transition-colors hover:text-white"
+        >
+          <FaLinkedinIn />
+        </a>
+
+        {/* Instagram Link */}
+        <a
+          href="https://www.instagram.com/__siam._.rahman__"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer transition-colors hover:text-white"
+        >
+          <FaInstagram />
+        </a>
+
+        {/* X (Twitter) Link */}
+        <a
+          href="https://x.com/siamrofficial76"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer transition-colors hover:text-white"
+        >
+          <FaXTwitter />
+        </a>
+
+        {/* WhatsApp Link */}
+        <a
+          href="https://wa.me/8801725963600"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer transition-colors hover:text-white"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
     </nav>
   );
