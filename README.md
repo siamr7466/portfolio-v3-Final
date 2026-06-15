@@ -1,16 +1,33 @@
-# React + Vite
+# Siam Rahman - Professional Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-tier, modern software engineering portfolio built to showcase technical expertise, professional experience, and web development projects. Designed with a clean, single-column layout to provide a premium user experience and clear visual hierarchy.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**[View Live Portfolio Here](https://portfolio-v3-final.vercel.app/)** ## 💻 Tech Stack
+This project was built using modern, industry-standard frontend technologies:
+* **Framework:** [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+* **Deployment:** Hosted live via [Vercel](https://vercel.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
+* **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing.
+* **Dark Theme Aesthetic:** A premium, dark-mode-first design with subtle gradient backgrounds and interactive hover states.
+* **Seamless Navigation:** Smooth scrolling single-page architecture.
+* **Dynamic Media:** Optimized image rendering with automatic aspect-ratio formatting using Tailwind `object-cover` classes.
 
-## React Compiler
+## 🛠️ Local Development Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To run this project locally on your machine, follow these steps:
 
-## Expanding the ESLint configuration
+**1. Clone the repository:**
+`git clone https://github.com/siamr7466/portfolio-v3-Final.git`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**2. Navigate into the project directory:**
+`cd portfolio-v3-Final`
+
+**3. Install dependencies:**
+`npm install`
+
+**4. Start the development server:**
+`npm run dev`
