@@ -1,10 +1,11 @@
 import project1 from "../assets/project-1.png";
+import spendifyImage from "../assets/Spendify_Logo.png";
 
 /*--------------------------- Experiences ------------------------*/
 
 export const EXPERIENCES = [
   {
-    year: "2025 - Present",
+    year: "2025 - 2026",
     role: "Foreign Communicator",
     company: "Softvence Agency",
     description: `Acted as the primary technical liaison for international clients, translating complex business requirements into actionable development strategies. Bridged the gap between non-technical stakeholders and the engineering team to ensure seamless project delivery. Guided clients through technical evaluations and helped transform raw business ideas into scalable digital products.`,
@@ -35,6 +36,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Spendify - Expense Tracker",
+    image: spendifyImage,
+    description: "A functional Flutter expense tracking mobile app with real-time balance calculation, local data persistence using SharedPreferences, and a complete Light/Dark theme system.",
+    technologies: ["Flutter", "Dart",],
+    githubUrl: "https://github.com/siamr7466/Spendify",
+    liveUrl: "https://github.com/siamr7466/Spendify/releases",
+  },
+  {
     title: "Scorpius Agency Website",
     image: project1,
     description:
@@ -46,14 +55,10 @@ export const PROJECTS = [
       "Framer Motion",
       "GSAP",
     ],
+    // githubUrl: "https://github.com/siamr7466",
+    liveUrl: "https://scorpiusmultimedia.vercel.app",
   },
-  //   {
-  //     title: "Task Management App",
-  //     // image: project2,
-  //     description:
-  //       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-  //     technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  //   },
+
   //   {
   //     title: "Portfolio Website",
   //     // image: project3,
