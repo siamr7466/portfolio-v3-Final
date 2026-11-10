@@ -68,7 +68,7 @@ const AI_TOOLS = [
 const Technologies = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
-      <h2 className="mb-20 mt-10 text-center text-4xl md:text-5xl">
+      <h2 className="my-20 text-center text-4xl">
         Technologies
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
@@ -93,7 +93,7 @@ const Technologies = () => {
       </div>
 
       {/* Subheading for AI & Dev Tools */}
-      <h2 className="my-20 text-center text-4xl md:text-5xl">
+      <h2 className="my-20 text-center text-4xl">
         AI &amp; Dev Tools
       </h2>
 
