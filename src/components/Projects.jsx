@@ -36,20 +36,8 @@ const Projects = () => {
               </div>
 
               <div className="w-full max-w-xl lg:w-3/4">
-                <div className="mb-2 flex flex-wrap items-center gap-2.5">
-                  <h6 className="font-semibold text-lg">{project.title}</h6>
-                  {project.badge && (
-                    <span
-                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium border ${
-                        project.badgeColor ||
-                        "border-purple-500/30 bg-purple-500/10 text-purple-300"
-                      }`}
-                    >
-                      {project.badge}
-                    </span>
-                  )}
-                </div>
-                <p className="mb-4 text-neutral-400 leading-relaxed">{project.description}</p>
+                <h6 className="mb-2 font-semibold">{project.title}</h6>
+                <p className="mb-4 text-neutral-400">{project.description}</p>
 
                 {/* Tech tags */}
                 <div className="flex flex-wrap gap-2">
