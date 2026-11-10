@@ -1,5 +1,7 @@
 import project1 from "../assets/project-1.png";
 import spendifyImage from "../assets/Spendify_Logo.png";
+import luminarImage from "../assets/luminar-weddings.jpg";
+import vmsImage from "../assets/vms.svg";
 
 /*--------------------------- Experiences ------------------------*/
 
@@ -35,6 +37,46 @@ export const EXPERIENCES = [
 /*--------------------------- Projects ------------------------*/
 
 export const PROJECTS = [
+  {
+    title: "VehiclePro • Vehicle Management System (VMS)",
+    image: vmsImage,
+    badge: "Currently Working On",
+    badgeColor: "border-sky-500/40 bg-sky-500/10 text-sky-300",
+    description:
+      "A complete, production-grade full-stack web application designed for enterprise fleet management. Built with a responsive Flutter Web frontend for mobile and desktop viewports, integrated with a Spring Boot REST API featuring Bearer token authentication, CORS configuration, and comprehensive error handling. Backed by a PostgreSQL relational database, containerized with Docker on Render, tested with 20+ automated JUnit & Mockito test suites, and deployed live via Netlify.",
+    technologies: [
+      "Flutter Web",
+      "Dart",
+      "Spring Boot",
+      "PostgreSQL",
+      "Docker",
+      "JUnit & Mockito",
+      "REST API",
+      "Netlify",
+    ],
+    githubUrl: "https://github.com/siamr7466/Vehiche_Management_System",
+    liveUrl: "https://vms-enterprise.netlify.app",
+    liveLabel: "Live Demo",
+    isWeb: true,
+  },
+  {
+    title: "Luminar Weddings",
+    image: luminarImage,
+    badge: "Delivered • Live",
+    badgeColor: "border-emerald-500/40 bg-emerald-500/10 text-emerald-300",
+    description:
+      "A production-grade, live commercial website delivered for Luminar Weddings, a premier wedding and documentary photography studio. Crafted with React and Tailwind CSS for high visual performance, aesthetic typography, and responsive layouts, backed by a Node.js server. Features curated portfolios, service pricing tiers, client testimonials, and full search engine optimization.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "SEO",
+    ],
+    liveUrl: "https://luminarweddings.com/",
+    liveLabel: "Visit Website",
+    isWeb: true,
+  },
   {
     title: "Spendify - Expense Tracker",
     image: spendifyImage,

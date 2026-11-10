@@ -4,10 +4,12 @@ import { FaGithub } from "react-icons/fa";
 import { FiDownload, FiExternalLink } from "react-icons/fi";
 
 const isDownloadLink = (project) => {
+  if (project.isWeb) return false;
+  if (project.liveLabel && !/download/i.test(project.liveLabel)) return false;
   if (project.liveLabel && /download/i.test(project.liveLabel)) return true;
   if (project.downloadUrl) return true;
   if (project.liveUrl && /releases|download|\.apk|\.exe/i.test(project.liveUrl)) return true;
-  if (project.technologies && project.technologies.some((t) => /flutter|dart|android|ios|swift|kotlin/i.test(t))) return true;
+  if (project.technologies && project.technologies.some((t) => /^flutter$|^dart$|^android$|^ios$/i.test(t))) return true;
   return false;
 };
 
@@ -34,8 +36,20 @@ const Projects = () => {
               </div>
 
               <div className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold">{project.title}</h6>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
+                <div className="mb-2 flex flex-wrap items-center gap-2.5">
+                  <h6 className="font-semibold text-lg">{project.title}</h6>
+                  {project.badge && (
+                    <span
+                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium border ${
+                        project.badgeColor ||
+                        "border-purple-500/30 bg-purple-500/10 text-purple-300"
+                      }`}
+                    >
+                      {project.badge}
+                    </span>
+                  )}
+                </div>
+                <p className="mb-4 text-neutral-400 leading-relaxed">{project.description}</p>
 
                 {/* Tech tags */}
                 <div className="flex flex-wrap gap-2">
