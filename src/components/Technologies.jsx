@@ -93,9 +93,9 @@ const Technologies = () => {
       </div>
 
       {/* Subheading for AI & Dev Tools */}
-      <h3 className="mb-8 mt-14 text-center text-xl md:text-2xl font-medium tracking-wide text-neutral-400">
+      <h2 className="my-20 text-center text-4xl md:text-5xl">
         AI &amp; Dev Tools
-      </h3>
+      </h2>
 
       {/* Second row of AI tools */}
       <div className="flex flex-wrap items-center justify-center gap-4">
