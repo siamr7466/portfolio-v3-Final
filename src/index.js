@@ -41,7 +41,7 @@ export const PROJECTS = [
     title: "VehiclePro • Vehicle Management System (VMS)",
     image: vmsImage,
     description:
-      "A complete, production-grade full-stack web application designed for enterprise fleet management. Built with a responsive Flutter Web frontend for mobile and desktop viewports, integrated with a Spring Boot REST API featuring Bearer token authentication, CORS configuration, and comprehensive error handling. Backed by a PostgreSQL relational database, containerized with Docker on Render, tested with 20+ automated JUnit & Mockito test suites, and deployed live via Netlify.",
+      "A complete, production-grade full-stack web application designed for enterprise fleet management. Built with a responsive Flutter Web frontend for mobile and desktop viewports, integrated with a Spring Boot REST API featuring Bearer token authentication, CORS configuration, and comprehensive error handling, backed by a PostgreSQL relational database.",
     technologies: [
       "Flutter Web",
       "Dart",
@@ -92,21 +92,6 @@ export const PROJECTS = [
     // githubUrl: "https://github.com/siamr7466",
     liveUrl: "https://scorpiusmultimedia.vercel.app",
   },
-
-  //   {
-  //     title: "Portfolio Website",
-  //     // image: project3,
-  //     description:
-  //       "A personal portfolio website showcasing projects, skills, and contact information.",
-  //     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  //   },
-  //   {
-  //     title: "Blogging Platform",
-  //     // image: project4,
-  //     description:
-  //       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  //   },
 ];
 
 /*--------------------------- Contacts ------------------------*/
@@ -134,18 +119,4 @@ export const EDUCATIONS = [
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
   },
-  //   {
-  //     year: "2016 - 2020",
-  //     role: "SSC",
-  //     company: "BIAM Model School & College, Bogura",
-  //     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  //   },
-  //   {
-  //     year: "2020 - 2021",
-  //     role: "Software Engineer",
-  //     company: "Paypal",
-  //     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  //   },
 ];
