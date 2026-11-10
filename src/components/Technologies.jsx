@@ -6,6 +6,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiWordpressFill } from "react-icons/ri";
 import { SiClaude } from "react-icons/si";
+import antigravityLogo from "../assets/antigravity.png";
 
 // DeepSeek official vector SVG
 const DeepSeekIcon = ({ className }) => (
@@ -39,22 +40,6 @@ const CursorIcon = ({ className }) => (
   </svg>
 );
 
-// Google Antigravity placeholder vector SVG
-const GoogleAntigravityIcon = ({ className }) => (
-  <svg
-    role="img"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className={className}
-    height="1em"
-    width="1em"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <title>Google Antigravity (Placeholder)</title>
-    <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2.3l6 3.75v7.9l-6 3.75-6-3.75v-7.9l6-3.75zM12 7a1 1 0 0 0-.8.4l-3 4.5a1 1 0 1 0 1.66 1.1L11 11.3V16a1 1 0 1 0 2 0v-4.7l1.14 1.7a1 1 0 1 0 1.66-1.1l-3-4.5A1 1 0 0 0 12 7z" />
-  </svg>
-);
-
 const AI_TOOLS = [
   {
     name: "Claude",
@@ -66,7 +51,13 @@ const AI_TOOLS = [
   },
   {
     name: "Google Antigravity",
-    icon: <GoogleAntigravityIcon className="text-7xl text-[#4285F4]" />,
+    icon: (
+      <img
+        src={antigravityLogo}
+        alt="Google Antigravity"
+        className="h-[72px] w-[72px] object-contain rounded-xl"
+      />
+    ),
   },
   {
     name: "Cursor",
@@ -108,19 +99,12 @@ const Technologies = () => {
 
       {/* Second row of AI tools */}
       <div className="flex flex-wrap items-center justify-center gap-4">
-        {AI_TOOLS.map((tool) => (
-          <div key={tool.name} className="group relative flex flex-col items-center">
-            <div
-              className="rounded-2xl border-4 border-neutral-800 p-4"
-              title={tool.name}
-              aria-label={tool.name}
-            >
-              {tool.icon}
-            </div>
-            {/* Tooltip on hover for consistency with row 1 tiles */}
-            <span className="pointer-events-none absolute -bottom-8 whitespace-nowrap rounded-md border border-neutral-800 bg-neutral-900/95 px-2.5 py-1 text-xs font-medium text-neutral-300 opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 z-10">
-              {tool.name}
-            </span>
+        {AI_TOOLS.map((tool, index) => (
+          <div
+            key={index}
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            {tool.icon}
           </div>
         ))}
       </div>
